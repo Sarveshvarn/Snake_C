@@ -8,7 +8,7 @@ int x, y, fruitX, fruitY, flag;
 /*Function to generate Fruit
 	within the Boundary */
 void setup() {
-	gameOver = 0;
+    gameOver = 0;
     
     //Stores height and width
     x = height / 2;
@@ -17,12 +17,12 @@ void setup() {
 label1:
 	fruitX = rand() % 20;
     if (fruitX == 0) {
-    	goto label1;
+        goto label1;
     }
 label2:
 	fruitY = rand() % 20;
     if (fruitY == 0) {
-    	goto label2;
+    	   goto label2;
     }
    	score = 0;
 }
@@ -74,13 +74,13 @@ void input() {
 
 //Function for the logic
 void logic() {
-	sleep(0.01);
+	   sleep(0.01);
     switch (flag) {
-   	case 1:
-    	y--;
+   	 case 1:
+    	    y--;
         break;
-    case 2:
-    	x++;
+     case 2:
+         x++;
         break;
     case 3:
     	y++;
