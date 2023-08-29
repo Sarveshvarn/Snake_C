@@ -20,11 +20,11 @@ label1:
         goto label1;
     }
 label2:
-	fruitY = rand() % 20;
+    fruitY = rand() % 20;
     if (fruitY == 0) {
-    	   goto label2;
+    	goto label2;
     }
-   	score = 0;
+   score = 0;
 }
 
 //Function to draw boundary
